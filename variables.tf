@@ -50,14 +50,5 @@ variable "tfe_workspace_name" {
   description = "(Required) Name of networking workspace to get info."
 }
 
-variable "public_subnets" {
-  type        = list(string)
-  description = "(Required) List of subnet IDs for EC2 instance deployments."
-}
-
-variable "vpc_id" {
-  type        = string
-  description = "(Required) VPC ID of VPC for application deployment."
-}
 
 
