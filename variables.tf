@@ -37,6 +37,11 @@ variable "api_key" {
   description = "(Required) API key for web app to talk to SaaS platform."
 }
 
+variable "playbook_repository" {
+  type        = string
+  description = "(Required) URI of Ansible playbook"
+}
+
 # variable "vpc_id" {
 #   type        = string
 #   description = "(Required) VPC ID of VPC for application deployment."
