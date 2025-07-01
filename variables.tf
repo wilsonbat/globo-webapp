@@ -37,6 +37,12 @@ variable "api_key" {
   description = "(Required) API key for web app to talk to SaaS platform."
 }
 
+variable "vpc_id" {
+  type        = string
+  description = "(Required) VPC ID of VPC for application deployment."
+
+}
+
 # TFE Variables
 
 variable "tfe_organization" {
