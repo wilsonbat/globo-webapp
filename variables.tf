@@ -43,6 +43,11 @@ variable "vpc_id" {
 
 }
 
+variable "public_subnets" {
+  type        = list(string)
+  description = "(Required) List of subnet IDs for EC2 instance deployments."
+}
+
 # TFE Variables
 
 variable "tfe_organization" {
