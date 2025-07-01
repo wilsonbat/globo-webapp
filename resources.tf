@@ -120,7 +120,7 @@ resource "aws_lb_target_group" "main" {
   port        = 80
   target_type = "instance"
   protocol    = "HTTP"
-  vpc_id      = data.tfe_outputs.networking.nonsensitive_values.vpc_id
+  vpc_id      = data.tfe_outputs.networking.nonsensitive_values.tfe_vpcid
 }
 
 resource "aws_alb_target_group_attachment" "main" {
